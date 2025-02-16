@@ -12,7 +12,7 @@ public class Apple : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Apple"))
+        if (collision.CompareTag("Player"))
         {
             appleCount--;
             if (appleCount > 0)
@@ -25,7 +25,7 @@ public class Apple : MonoBehaviour
                 AppleImage.gameObject.SetActive(false);
 
             }
-            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 }
