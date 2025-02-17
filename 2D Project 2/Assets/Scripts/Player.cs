@@ -13,7 +13,8 @@ public class Player : MonoBehaviour
     private Animator animator;
     private bool isGrounded;
     private float moveInput;
-    private bool facingRight = true;
+    [HideInInspector]
+    public bool facingRight = true;
 
     void Start()
     {
